@@ -6,7 +6,7 @@
 4. inicijuojam npm
 5. isirasom express ir cors
 6. sukuriam serveri su port 3000 (consoleje pranesa kad serveris paleistas)
-7. sukuriam enpointa GET '/' kuri grazina "<h1>Sveiki is back end</h1>"
+7. sukuriam enpointa GET '/' kuri grazina "`< h1 >Sveiki is back end< / h1 >`"
 8. sukuriam endpointa GET /posts kuris grazina json masyva su 3 postais
    postas turi title ir text
 9. sukuriam endpointa GET /api/towns kuris grazina random miesta is npm casual(naudotas pries tai pratime)
