@@ -1,8 +1,13 @@
 const express = require('express');
 const func = require('./functions');
+const cors = require('cors');
 const app = express();
 // 3000, 8000 3001 8080 5000
 const PORT = 3000;
+
+// MiddleWare
+// leis gauti duomenis is bet kurio adreso
+app.use(cors());
 
 // api endpoint
 // localhost:3000/ => hello back end world
