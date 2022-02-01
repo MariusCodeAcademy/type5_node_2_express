@@ -1,20 +1,18 @@
 function makeCamelCase(str) {
   // console.log(str);
   const arrFromString = str.split('');
-  const arrayAfterProccess = [];
-  arrFromString.forEach((element, idx, arr) => {
-    if (element !== ' ') {
-      arrayAfterProccess.push(element);
-    } else {
-      // padaryti kita raide didziaja
-      arr[idx + 1] = arr[idx + 1].toUpperCase();
-    }
-  });
   // pamazinti pirmos raides case
-  arrayAfterProccess[0] = arrayAfterProccess[0].toLowerCase();
-  const stringFromArr = arrayAfterProccess.join('');
-  // console.log('stringFromArr ===', stringFromArr);
-  return stringFromArr;
+  arrFromString[0] = arrFromString[0].toLowerCase();
+  return arrFromString
+    .filter((element, idx, arr) => {
+      if (element !== ' ') {
+        return element;
+      } else {
+        // padaryti kita raide didziaja
+        arr[idx + 1] = arr[idx + 1].toUpperCase();
+      }
+    })
+    .join('');
 }
 
 // makeCamelCase('Ar veikia kupranunario case?');
