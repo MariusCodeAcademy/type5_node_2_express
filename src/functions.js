@@ -1,7 +1,6 @@
 function makeCamelCase(str) {
   // console.log(str);
   const arrFromString = str.split('');
-  // console.log('arrFromString ===', arrFromString);
   const arrayAfterProccess = [];
   arrFromString.forEach((element, idx, arr) => {
     if (element !== ' ') {
